@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-with, initial-scale=1, maximum-scale=1">
+	<!-- <link rel="shortcut icon" href="Image/favicon.ico" type="image/x-icon"/> -->
+
+	<title>Baaboo</title>
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/gmap3.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/bootstrap_tab.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/tinymce.min.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<script src="js/jquery.parallax-scroll.js"></script>
+	<script src="js/jQuery.succinct.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/custom.js"></script>
+</head>
+<body>
+	<header class="head-section noprint">
+		<div class="top-links">
+			<div class="container">
+				<div id="logo_text">
+					<a href="#"><img src="images/logo_text.png" alt="BaaBoo"></a>
+				</div>
+				<div id="logo">
+					<a href="#"><img src="images/logo.png" alt="BaaBoo"></a>
+				</div>
+				<ul class="list-unstyled register">
+					<li><a href="#register_wrapper" class="fancybox" id="register-link">Đăng kí  </a></li>
+					<li><a href="#register_wrapper" class="fancybox" id="log-in-link">Đăng nhập</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main_nav">
+			<div class="container">
+				<div class="nav_inner">
+					<div id="cssmenu">
+						<ul>
+							<li class="active"><a href="#home">Trang Chủ</a></li>
+							<li class="has-sub"><a href="#product">sản phẩm</a>
+								<ul>
+							        <li><a href='#'>Rau câu </a></li>
+							        <li><a href='#'>Bánh Bò nướng </a></li>
+							        <li><a href='#'>Bánh Khoai mỳ </a></li>
+							        <li class='has-sub'><a href='#'>Bánh Da lợn</a>
+							            <ul>
+							               <li><a href='#'>Da lợn ổ size nhỏ </a></li>
+							               <li><a href='#'>Da lợn bông hồng </a></li>
+							               <li><a href='#'>Da lợn trái cây </a></li>
+							            </ul>
+							        </li>
+							        <li><a href='#'>Bánh Khoai Môn </a></li>
+							        <li><a href='#'>Bánh Đậu xanh </a></li>
+							        <li><a href='#'>Bánh Chuối </a></li>
+							    </ul>
+							</li>
+							<li><a href="#contact">Liên Hệ</a></li>
+							<li><a href="#price_section">Bảng Giá</a></li>
+						</ul>
+					</div>
+					<div class="cart_wrapper">
+						<a href="#cart_popup" class="fancybox">
+							<span class="icon-cart"></span>
+							<span class="count highlight-bg">0</span>
+						</a>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</header>
+	<div id="home" class="hero noprint" >
+		<div class="overlay"></div>
+		<div class="hero_img">
+			<img src="images/bg.jpg" alt="bg" data-parallax='{"y": 230}'>
+		</div>
+		<div class="hero_inner">
+			<div class="container">
+				<h1>Welcome to Baa&Boo</h1>
+				<a href="#pro_popup" class="btn_more hvr-shutter-out-horizontal img_fancybox">xem thêm</a>
+				<div class="quick_categories">
+					<ul class="highlight-bg list-unstyled clearfix">
+						<li><a href=""><i class="icon-cake01"></i><span>Rau câu </span></a></li>
+						<li><a href=""><i class="icon-cake02"></i><span>Bánh Bò nướng </span></a></li>
+						<li><a href=""><i class="icon-cake03"></i><span>Bánh Khoai mỳ </span><span> </span></a></li>
+						<li><a href=""><i class="icon-cake04"></i><span>Bánh Da lợn </span></a></li>
+						<li><a href=""><i class="icon-cake05"></i><span>Bánh Khoai Môn </span></a></li>
+						<li><a href=""><i class="icon-cake06"></i><span>Bánh Đậu xanh </span></a></li>
+						<li><a href=""><i class="icon-cake07"></i><span>Bánh Chuối </span></a></li>
+					</ul>
+					<div class="info_contact">
+						<span>Thứ 2 - Thứ 7 | 8:30 -18:00</span>
+						<span class="number">0933 675 051</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- INTRO SECTION -->
+	<section class="intro_section noprint">
+		<div class="container">
+			<header>
+				<h4 class="txt-center">Bánh ngon hôm nay</h4>
+				<span class="saperator"></span>
+			</header>
+			<div class="col-3">
+				<div class="row">
+					<div class="item_inner">
+				  		<div class="img_container">
+				  			<img src="images/img001.jpg" alt="image 01" />
+				  		</div>
+				  		<div class="des_container">
+				  			<div class="des_inner">
+				  				<h5 class="pro_name"><a href="">Bánh đậu xanh mini cup</a></h5>
+					  			<div class="price_box">
+					  				<span class="price">50,000</span>
+					  				<span class="old_price">20,000 </span> 
+					  			</div>
+					  			<a href="" class="btn btn_cart">Đặt hàng </a>
+				  			</div>
+				  		</div>
+				  	</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="row">
+					<div class="item_inner">
+				  		<div class="img_container">
+				  			<img src="images/img004.jpg" alt="image 01" />
+				  		</div>
+				  		<div class="des_container">
+				  			<h5 class="pro_name"><a href="">Bánh đậu xanh mini cup</a></h5>
+				  			<div class="price_box">
+				  				<span class="price">50,000</span>
+				  				<span class="old_price">20,000 </span> 
+				  			</div>
+				  			<a href="" class="btn btn_cart">Đặt hàng </a>
+				  		</div>
+				  	</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="row">
+					<div class="item_inner">
+				  		<div class="img_container">
+				  			<img src="images/img003.jpg" alt="image 01" />
+				  		</div>
+				  		<div class="des_container">
+				  			<h5 class="pro_name"><a href="">Bánh đậu xanh mini cup</a></h5>
+				  			<div class="price_box">
+				  				<span class="price">50,000</span>
+				  				<span class="old_price">20,000 </span> 
+				  			</div>
+				  			<a href="" class="btn btn_cart">Đặt hàng </a>
+				  		</div>
+				  	</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="row">
+					<div class="item_inner">
+				  		<div class="img_container">
+				  			<img src="images/img002.jpg" alt="image 01" />
+				  		</div>
+				  		<div class="des_container">
+				  			<h5 class="pro_name"><a href="">Bánh đậu xanh mini cup</a></h5>
+				  			<div class="price_box">
+				  				<span class="price">50,000</span>
+				  				<span class="old_price">20,000 </span> 
+				  			</div>
+				  			<a href="" class="btn btn_cart">Đặt hàng </a>
+				  		</div>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //INTRO SECTION -->
+
+	<!-- INFO DELIVERY -->
+	<section class="info_delivery noprint">
+		<div class="container">
+			<div class="col-4">	
+				<i class="delivery01 highlight-bg"></i>				
+				<h4>Cách thức đặt hàng</h4>
+				<p>Liên hệ trực tiếp qua hotline 0933 675 051 <br/>để nhân viên Baa&Boo ghi nhận các món ăn. <br/>Vui lòng đặt hàng trước 1 ngày.</p>
+			</div>
+			<div class="col-4">	
+				<i class="delivery02 highlight-bg"></i>				
+				<h4>Cách thức giao hàng</h4>
+				<p>Sau khi nhận được đơn hàng, Baa&Boo sẽ liên hệ lại<br/> theo số điện thoại mà quý khách đã cung cấp để<br/> xác nhận thông tin đặt hàng.</p>
+			</div>
+			<div class="col-4">	
+				<i class="delivery03 highlight-bg"></i>				
+				<h4>Cách thức thanh toán</h4>
+				<p>Nhân viên của Baa&Boo sẽ thu tiền mặt trực tiếp <br/>khi giao hàng cho quý khách.</p>
+			</div>
+		</div>
+	</section>
+	<!-- //INFO DELIVERY -->
+
+	<!-- REVIEW PRODUCT CAROUSEL -->
+	<section id="product" class="review_pro noprint">
+		<div class="container">
+
+			<!-- OWL CAROUSEL _ PRODUCTS  -->
+			<div class="owl-products">
+				<div class="carousel-description ">
+					<div class="overlay"></div>
+					<div class="content">
+						<h4>Bánh Bò nướng</h4>
+						<div class="des">
+							<p>Bánh bò nướng Baaboo là sự kết hợp hài hòa giữa vị béo của nước cốt dừa, vị bùi bùi đặc trưng của trứng, vị ngọt thanh và màu vàng tự nhiên của đường thốt nốt. </p>
+							<p>Tất cả tạo nên một hương vị tuyệt vời mà khi bạn đã ăn rồi là cứ muốn ăn nữa.</p>
+						</div>
+					</div>
+					<img src="images/003.jpg" alt="image 01">
+				</div>
+				<div class="carousel_wrapper">
+					<ul class="owl-carousel">
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/11.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh bò nướng size nhỏ</a></h5>
+						  			<div class="info">
+						  				<p>Khi nhắc đến bánh bò, chắc mọi người sẽ nghĩ ngay đến chiếc bánh bò hấp truyền thống ăn cùng với muối mè. Nhưng baaboo xin được giới thiệu đến các bạn chiếc bánh bò nướng đầy mới lạ. </p>
+						  				<p>Bánh là sự kết hợp giữa cái béo của nước cốt dừa, vị bùi bùi của trứng và vị ngọt thanh của đường. </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">65,000</span>
+						  				<span class="old_price">80,000 </span> 
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						  </li>
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/12.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh bò nướng size lớn</a></h5>
+						  			<div class="info">
+						  				<p>Với cỡ bánh lớn hơn, bạn dễ dàng chia sẽ nhiều hơn với mọi người( từ 9-10 người)</p>
+						  				<p>Đặc biệt baaboo sử dụng đường thốt nốt trong bánh sẽ tạo cho bánh có vị ngọt thanh, ăn vào không quá gắt như đường cát, lại có vị bùi bùi, thơm béo, sẽ tạo cảm giác mới lạ cho người ăn, đã ăn rồi là cứ muốn ăn nữa. </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">120,000</span>
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						  </li>
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/14.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh bò ong bướm</a></h5>
+						  			<div class="info">
+						  				<p>Tạo cảm giác ngon miệng cho các bé khi bánh có hình ảnh ngộ nghĩnh </p>
+						  				<p>Bánh dùng ăn tráng miệng hay ăn vặt lúc chuyện trò thích hợp không gì bằng. Từng chiếc bánh dẻo dai, béo bùi, thơm ngậy, hương vị thanh tao khiến bao bực dọc trong người cũng như tan biến hết.</p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">50,000</span>
+						  				<span class="old_price">20,000 </span> 
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						  </li>
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/13.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh bò cách tân </a></h5>
+						  			<div class="info">
+						  				<p>Với nhiều hình dạng và việc sử dụng chocolate sẽ tăng thêm phần ngon miệng cho bạn </p>
+						  				<p>Từng chiếc bánh dẻo dai, béo bùi, thơm ngậy, hương vị thanh tao khiến bao bực dọc trong người cũng như tan biến hết.  </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">50,000</span>
+						  				<span class="old_price">20,000 </span> 
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //OWL CAROUSEL _ PRODUCTS  -->
+			<!-- OWL CAROUSEL _ PRODUCTS  -->
+			<div class="owl-products reverse">
+				<div class="carousel_wrapper ">
+					<ul class="owl-carousel">
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/06.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh chuối nướng ổ size nhỏ </a></h5>
+						  			<div class="info">
+						  				<p>Bánh thơm béo mùi nước cốt dừa hòa quyện với từng lớp chuối chín, vừa miệng, không quá ngọt nên ăn không bị ngấy, thêm tách trà xanh nữa thì tuyệt biết bao. </p>
+						  				<p>Chiếc bánh ngon không chỉ là món quà của quê hương, mà còn là cầu nối tình cảm của những tâm hồn đồng điệu. </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">120,000</span>
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						  </li>
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/08.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh chuối nướng ổ size lớn</a></h5>
+						  			<div class="info">
+						  				<p>Bánh chuối nướng với Chuối được chia làm 2 phần, một phần trộn đều với bột để bánh đượm mùi vị chuối, một phần xếp trên mặt bánh để từng lát chuối được nhiệt nướng thơm se se lại tạo thành bề mặt chín vàng đẹp mắt, bên trong dẻo mềm, thoang thoảng hương vị béo của nước cốt dừa thật hấp dẫn và thơm ngon có thể dùng làm món ăn chơi hay món tráng miệng đều thích hợp </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">65,000</span>
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						  </li>
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/10.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh chuối nướng cupcake</a></h5>
+						  			<div class="info">
+						  				<p>Chuối là một trong những thực phẩm bổ dưỡng và được sử dụng rộng rãi nhất thế giới. khi còn là bông có thể làm canh, lớn lên chút thì làm gỏi, khi chín có thể ăn, nấu chè, làm kem và đặc biệt là làm bánh. </p>
+						  				<p>Vị dai bên ngoài bánh và phần nhân bán thơm dẻo sẽ khiến bạn không thể chối từ </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">50,000</span>
+						  				<span class="old_price">20,000 </span> 
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						  </li>
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/07.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh đậu xanh mini cup 8</a></h5>
+						  			<div class="info">
+						  				<p>Món tráng miệng quen thuộc nhưng luôn có sức hấp dẫn mọi người bởi thành phần chính là loại trái cây nhiệt đới có sức mê hoặc cao </p>
+						  				<p>Bánh chín vàng đẹp mắt, bên trong dẻo mềm, thoang thoảng hương vị béo của nước cốt dừa thật hấp dẫn và thơm ngon có thể dùng làm món ăn chơi hay món tráng miệng đều thích hợp </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">50,000</span>
+						  				<span class="old_price">20,000 </span> 
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						</li>
+					</ul>
+				</div>
+				<div class="carousel-description ">
+					<div class="overlay"></div>
+					<div class="content">
+						<h4>Bánh chuối nướng</h4>
+						<div class="des">
+							<p>Bánh chuối nướng thơm béo mùi nước cốt dừa hòa quyện với từng lớp chuối chín, vừa miệng, không quá ngọt nên ăn không bị ngấy, thêm tách trà xanh nữa thì tuyệt biết bao.</p>
+						</div>
+					</div>
+					<img src="images/002.jpg" alt="image 01">
+				</div>
+			</div>
+			<!-- //OWL CAROUSEL _ PRODUCTS  -->
+			<!-- OWL CAROUSEL _ PRODUCTS  -->
+			<div class="owl-products">
+				<div class="carousel-description ">
+					<div class="overlay"></div>
+					<div class="content">
+						<h4>Bánh đậu xanh </h4>
+						<div class="des">
+							<p>Bánh thơm mùi đậu xanh, ngậy mùi sữa và béo của nước cốt dừa, tuy đơn giản nhưng sức hấp dẫn vượt xuyên thời gian.</p>
+						</div>
+					</div>
+					<img src="images/001.jpg" alt="image 01">
+				</div>
+				<div class="carousel_wrapper">
+					<ul class="owl-carousel">
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/03.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox" rel="gallery1"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh đậu xanh ổ size nhỏ</a></h5>
+						  			<div class="info">
+						  				<p>Với những hạt đậu xanh được tuyển chọn kỹ càng tạo nên 1 mùi vị đặc trưng cho bánh. Vị dai bên ngoài bánh và phần nhân bán thơm dẻo sẽ khiến bạn không thể chối từ</p>
+						  				<p>Bánh thơm mùi đậu xanh, ngậy mùi sữa và béo của nước cốt dừa, tuy đơn giản nhưng sức hấp dẫn vượt xuyên thời gian. </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">65,000</span>
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						  </li>
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/05.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox" rel="gallery1"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh đậu xanh ổ size lớn</a></h5>
+						  			<div class="info">
+						  				<p>Baaboo cung cấp các sản phẩm làm từ nguyên liệu thiên nhiên như trứng, đường, bột, dừa. Bánh của baaboo không chứa các chất bảo quản và thành phần nhân tạo khác. </p>
+						  				<p>Bạn hãy liên lạc vói baaboo để nhận được nhiều ưu đãi khi đặt bánh với số lượng lớn. </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">50,000</span>
+						  				<span class="old_price">20,000 </span> 
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						  </li>
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/04.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox" rel="gallery1"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh đậu xanh bông hồng</a></h5>
+						  			<div class="info">
+						  				<p>Tuổi thơ ai lớn lên mà không từng thưởng thức bánh đậu xanh. Bánh là sự kết hợp hài hòa giữa vị béo của nước cốt dừa, vị bùi bùi đặc trưng của đậu xanh, vị ngọt thanh và màu vàng tự nhiên của đậu xanh.  </p>
+						  				<p>Bánh vàng ruộm, thơm nức mũi, khi ăn thấy vị bùi bùi của đậu xanh, dẻo thơm của khoai mì còn vấn vương mãi.  </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">120,000</span>
+						  				<span class="old_price">150,000 </span> 
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						  </li>
+						  <li>
+						  	<div class="item_inner">
+						  		<div class="img_container">
+						  			<img src="images/02.jpg" alt="image 01" data-large-src="" />
+						  			<div class="overlay"></div>
+						  			<a href="#pro_popup" title="" class="prod_fancybox" rel="gallery1"><div class="icon-zoom"></div></a>
+						  		</div>
+						  		<div class="des_container">
+						  			<h5 class="pro_name"><a href="">Bánh đậu xanh mini cup </a></h5>
+						  			<div class="info">
+						  				<p>Bánh vàng ruộm, thơm nức mũi, khi ăn thấy vị bùi bùi của đậu xanh, dẻo thơm của khoai mì còn vấn vương mãi. Tất cả tạo nên một hương vị tuyệt vời mà khi bạn đã ăn rồi là cứ muốn ăn nữa.  </p>
+						  				<p>Chỉ cần một miếng bánh khoai mì nướng cùng một ly sữa nóng nhỏ là bạn đã có thể lấy lại tinh thần để buổi chiều làm việc thật hiệu quả rồi. </p>
+						  			</div>
+						  			<div class="price_box">
+						  				<span class="price">50,000</span>
+						  				<span class="old_price">20,000 </span> 
+						  			</div>
+						  			<a href="" class="btn btn_cart">Đặt hàng </a>
+						  		</div>
+						  	</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //OWL CAROUSEL _ PRODUCTS  -->
+		</div>
+	</section>
+	<!-- // REVIEW PRODUCT CAROUSEL -->
+
+	<!-- PRICE LIST -->
+	<section id="price_section" class="center">
+		<header class="title txt-center">
+			<h3>BẢNG GIÁ</h3>
+			<span>(Giá trên chưa bao gồm 10% VAT)</span>
+		</header>
+		<div class="menu-list">
+			<div class="container">
+				<a href="javascript:window.print();" class="btn btn_print noprint">In file PDF</a>
+				<div class="col-12">
+					<div class="col-6">
+						<h4 class="highlight-color">bánh bò nướng</h4>
+		    			<div class="food wow fadeInLeft" data-wow-delay="0.0s">
+		        			<h6 class="food-name">Bánh bò nướng ổ size lớn</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>1 cái</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>120.000 VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInLeft" data-wow-delay="0.1s">
+		        			<h6 class="food-name">Bánh bò nướng ổ size nhỏ</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>1 cái</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>65.000 VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInLeft" data-wow-delay="0.2s">
+		        			<h6 class="food-name">Bánh bò bông hồng</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>6 bánh/ hộp	</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>120.000 VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInLeft" data-wow-delay="0.3s">
+		        			<h6 class="food-name">Bánh bò ong bướm</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>8 bánh/ hộp</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>120.000 VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInLeft" data-wow-delay="0.3s">
+		        			<h6 class="food-name">Bánh bò cách tân</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>1 cái</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>120.000 VND</span></div>
+		        			</div>
+		        		</div>	
+		    		</div>
+		    		<div class="col-6">
+		    			<h4 class="highlight-color">bánh da lợn</h4>
+		    			<div class="food wow fadeInRight" data-wow-delay="0.0s">
+		        			<h6 class="food-name">Da lợn ổ size lớn</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>1 cái</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>120.000 VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInRight" data-wow-delay="0.1s">
+		        			<h6 class="food-name">Da lợn ổ size nhỏ</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>1 cái</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>65.000 VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInRight" data-wow-delay="0.2s">
+		        			<h6 class="food-name">Da lợn bông hồng</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>12 bánh/ hộp</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>65.000VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInRight" data-wow-delay="0.3s">
+		        			<h6 class="food-name">Da lợn trái cây</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>24 bánh/ hộp</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>65.000VND</span></div>
+		        			</div>
+		        		</div>	
+		    		</div>
+				</div>
+				
+				<div class="col-12">
+					<div class="col-6">
+						<h4 class="highlight-color">Bánh khoai mì </h4>
+		    			<div class="food wow fadeInLeft" data-wow-delay="0.0s">
+		        			<h6 class="food-name">Bánh khoai mì ổ size lớn	</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>1 cái</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>120.000 VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInLeft" data-wow-delay="0.1s">
+		        			<h6 class="food-name">Bánh khoai mì ổ size nhỏ	</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>1 cái</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>65.000 VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInLeft" data-wow-delay="0.2s">
+		        			<h6 class="food-name">Bánh khoai mì cupcake</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>12 bánh/ hộp	</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>65.000 VND</span></div>
+		        			</div>
+		        		</div>
+		    		</div>
+		    		<div class="col-6">
+		    			<h4 class="highlight-color">Bánh đậu xanh </h4>
+		    			<div class="food wow fadeInRight" data-wow-delay="0.0s">
+		        			<h6 class="food-name">Bánh đậu xanh ổ size lớn	</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>1 cái</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>120.000 VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInRight" data-wow-delay="0.1s">
+		        			<h6 class="food-name">Bánh đậu xanh ổ size nhỏ</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>1 cái</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>65.000 VND</span></div>
+		        			</div>
+		        		</div>
+		        		<div class="food wow fadeInRight" data-wow-delay="0.2s">
+		        			<h6 class="food-name">Bánh đậu xanh cupcake</h6>
+		        			<div class="food-desc">
+		        				<div class="food-details"><span>12 bánh/ hộp</span></div>
+		        				<div class="dots"></div>
+		        				<div class="food-price"><span>65.000VND</span></div>
+		        			</div>
+		        		</div>
+		    		</div>
+				</div>
+	    	</div>
+		</div>
+	</section>
+	<!-- // PRICE LIST -->
+	
+	<!-- ABOUT US -->
+	<section id="contact">
+		<div class="gmap3"></div>
+		<div class="main-footer">
+	    	<div class="container">
+    			<div class="col-3 text-center">
+    				<div class="intro-container">
+    					<h4>Điều gì làm nên sự khác biệt ở Baa&Boo?</h4>
+    					<p>Chính là chọn lựa từ các nguyên liệu nguồn gốc thiên nhiên, tốt nhất để làm nên các thành phần như hạt củ năng, bột lọc lá dứa, nếp cẩm, bánh flan và tuyển chọn những loại trái cây đặc trưng vốn có của các nước vùng nhiệt đới như Việt Nam, nhưng hoàn toàn thú vị nhé! </p>
+    				</div>
+    			</div>
+    			<div class="col-6 noprint">
+    				<div class="contact-form-container">
+						<div class="section-title">
+							<h3 class="normal-color">LIÊN HỆ</h3>
+						</div>
+						<form id="contact-form" class="footer-contact-form" method="post" action="">
+							<input type="text" class="name" name="name" placeholder="Họ tên*" required="" value="">
+							<input type="text" class="email" name="email" placeholder="Email*" required="" value="">
+							<textarea id="message" class="message" name="message" rows="16" placeholder="Nội dung" required=""></textarea>
+							<button type="submit" class="btn">Gửi Email</button>
+						</form>
+					</div>
+    			</div>
+    			<div class="col-3">
+    				<div class="address-container">
+						<address>
+							<img src="images/map-pin.png" alt="Address">
+							<p>
+								<span>Chi nhánh 1</span>
+								<span>185 Võ Văn Tần, P5, Q.3</span>
+								<span>Chi nhánh 2</span>
+								<span>35 Lý Thường Kiệt, P11, Q.6</span>
+								<span>Chi nhánh 3</span>
+								<span>185 Võ Văn Tần, P5, Q.3</span>
+							</p>							
+							<img src="images/phone-icon.png" alt="Phone">
+							<p><span>Phone: (415) 124-5678
+								</span><span>Fax: (415) 124-5678</span></p>							
+							<img src="images/mail-icon2.png" alt="Email">
+							<p><span>support@yourname.com</span></p>						
+						</address>
+					</div>
+    			</div>
+	    	</div>
+	    </div>
+		
+	</section>
+	<footer>
+    	<div class="container">
+    		<div class="col-6">
+    			<div class="copyright">
+    				&copy; Copyright 2016
+					<a href="index.html" class="highlight-color">Baa&amp;Boo</a>. All Rights Reserved. Theme by 
+					<a target="_blank" href="#" class="highlight-color">Thien Kim</a>.
+    			</div>
+    		</div>
+    		<div class="col-6">
+    			<div class="social pull-right">
+    				<a href=""><img src="images/twitter.png" alt=""></a>
+    				<a href=""><img src="images/vimeo.png" alt=""></a>
+    				<a href=""><img src="images/digg.png" alt=""></a>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+    <a href="#" id="back-to-top" title="Back to top"></a>
+
+    <!-- REGISTER POPUP -->
+    <div id="register_wrapper" style="display:none">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<a href="#register" aria-controls="register" role="tab" data-toggle="tab">ĐĂNG kí</a>
+			</li>
+			<li role="presentation">
+				<a href="#log-in" aria-controls="log-in" role="tab" data-toggle="tab">ĐĂNG NHẬP</a>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane active" role="tabpanel" id="register">
+				<form id="register-frm" class="" method="post" action="">
+					<h5>Thông tin cá nhân</h5>
+					<input type="text" class="name" name="username" placeholder="Name*" >
+					<input type="text" class="phone" name="phone" placeholder="Điện thoại*">
+					<input type="text" class="address" name="address" placeholder="Địa chỉ*">
+					<h5>Thông tin tài khoản</h5>
+					<input type="text" class="email" name="email" placeholder="Email*">
+					<input type="password" class="password" name="pass" id="pass" placeholder="Mật khẩu*" >
+					<input type="password" class="password" name="confirm_pass" placeholder="Nhập lại mật khẩu*" >
+					<p>Bạn đã có tài khoản? <strong>Đăng nhập ngay</strong></p>
+					<button type="submit" class="btn highlight-color">Đăng kí</button>
+				</form>
+			</div>
+			<div class="tab-pane " role="tabpanel" id="log-in">
+				<form id="log-in-frm" class="" method="post" action="">
+					<input type="text" class="email" name="email" placeholder="Email*">
+					<input type="password" class="password" name="pass" placeholder="Mật khẩu*" >
+					<a href="" class="underline">Quên mật khẩu?</a>
+					<button type="submit" class="btn highlight-color">Đăng nhập</button>
+					<button type="submit" class="btn btn_fb">Đăng nhập qua Facebook</button>
+				</form>
+			</div>
+		</div>
+    </div>
+    <!-- // REGISTER POPUP -->
+
+    <!-- PRODUCT POPUP -->
+		<div id="pro_popup" class="clearfix" style="display:none"> </div>
+    <!-- // PRODUCT POPUP -->
+
+    <!-- CART POPUP -->
+    <div id="cart_popup" style="display:none;">
+    	<div class="clearfix">
+	    	<h4>Chi tiết giỏ hàng</h4>
+	    	<table class="tbl-cart">
+	    		<tr>
+	    			<td>
+	    				<a href="" class="thumbnail"><img src="images/01.jpg" alt="" /></a>
+	    				<a href="" class="title">Bánh bò nướng Hoa hồng</a>
+	    			</td>
+	    			<td width="30%">
+	    				<input type="text" value="1"/>
+	    				<span>x 45,000 </span>
+	    			</td>
+	    			<td width="20%">
+	    				<span class="price">45,000</span>
+	    			</td>
+	    			<td width="10%"> <a href="" class="delete"></a></td>
+	    		</tr>
+	    	</table>
+	    	<table class="tbl-cart">
+	    		<tr>
+	    			<td>
+	    				<a href="" class="thumbnail"><img src="images/01.jpg" alt="" /></a>
+	    				<a href="" class="title">Bánh bò nướng Hoa hồng</a>
+	    			</td>
+	    			<td width="30%">
+	    				<input type="text" value="1"/>
+	    				<span>x 45,000 </span>
+	    			</td>
+	    			<td width="20%">
+	    				<span class="price">45,000</span>
+	    			</td>
+	    			<td width="10%"> <a href="" class="delete"></a></td>
+	    		</tr>
+	    	</table>
+	    	<div class="total pull-right">
+	    		Tổng cộng <span class="highlight-color">90,000</span>
+	    	</div>
+    	</div>
+
+    	<div class="clearfix">
+	    	<h4>THÔNG TIN GIAO HÀNG:</h4>
+	    	<form id="frm_cart" action="" name="frmCart" class="clearfix" method="post"> 
+	    		<div class="row">
+		    		<div class="col-8">
+	    				<input type="text" class="name" name="username" placeholder="Họ Tên*" >
+						<input type="text" class="phone" name="phone" placeholder="Điện thoại*">
+						<input type="text" class="email" name="email" placeholder="Email*">
+						<div class="pull-left" style="width:264px;">
+							<input type="text" class="address " name="address" placeholder="Địa chỉ*" style="">
+						</div>
+						<div id="dd" class="wrapper-dropdown-1 pull-right" style="width:146px;">
+	                        <span class="dropdown-label">Chọn Quận </span>
+	                         <ul class="dropdown">
+			                      <li><a href="">Quận 1</a></li>
+			                      <li><a href="">Quận 2</a></li>
+			                      <li><a href="">Quận 3 </a></li>
+			                      <li><a href="">Quận 4 </a></li>
+			                      <li><a href="">Quận 5 </a></li>
+			                      <li><a href="">Quận Phú Nhuận </a></li>
+			                      <li><a href="">Quận Gò Vấp </a></li>
+	                         </ul>
+	                         <input type="hidden" name="district" value="" id="district"/>
+					    </div>
+					    <input type="text" class="calendar" name="calendar" placeholder="Thời gian giao hàng">
+						<textarea name="" id="comment" cols="30" rows="5" placeholder="Ghi chú" style="margin-bottom: 5px;"></textarea>
+						<div class="block checkbox_group">
+							<input id="checkbox_01" type="checkbox" name="custom" value="rush_order">
+							<label for="checkbox_01">Giao hàng gấp (trong vòng 30 phút)</label><br>
+							<input type="checkbox" name="custom" value="normal_order">
+							<label class="last"  for="checkbox_01">Giao hàng trong ngày.</label>
+						</div>
+		    		</div>	
+					<div class="col-4 info_wrapper">
+						<div class="info_inner">
+							<ul>
+								<li>Miễn phí cho các đơn hàng từ 100.000 vnđ ở các quận 1, 3, Phú Nhuận.</li>
+								<li>Trường hợp khác:  phí giao hàng từ 15.000 - 50.000 vnđ (Tùy khu vực).</li>
+								<li>Vui lòng đặt hàng trước 1 ngày. <br>Liên lạc với đường dây nóng của baa&boo <strong>0933 675 051
+								</strong> để biết thêm <br>chi tiết.</li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+				<div class="col-12 btn_cart">
+					<div class="pull-right">
+						<button type="" class="btn close-fancybox">Tiếp tục đặt mua</button>
+						<button type="submit" class="btn highlight-bg btn-submit">Mua hàng</button>
+					</div>
+				</div>
+	    	</form>
+    	</div>
+    </div>
+    
+    <!-- // CART POPUP -->
+</body>
+</html>
