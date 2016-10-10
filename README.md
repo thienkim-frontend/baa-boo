@@ -8,6 +8,7 @@ $ npm install gulp-less
 $ npm install gulp-watch
 npm install --save-dev gulp-livereload
 npm install --save-dev gulp-gh-pages
+npm install gulp-concat gulp-rename gulp-uglify --save-dev  
 
 Markdown syntax guide
 https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html

@@ -1,0 +1,311 @@
+@import "_mixin.less";
+@highlight-color: #ec008c;
+@light-grey: #efefef;
+@black: #272727;
+@dark-grey: #333;
+@grey: #999;
+@white: #fff;
+.hero {
+  position: relative;
+  .hero_img {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      top: -100px;
+      left: 0;
+    }
+  }
+  .hero_inner {
+    text-align: center;
+    z-index: 101;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -558px;
+    color: @white;
+    h1 {
+      font-size: 48px;
+      font-weight: lighter;
+    }
+    .btn_more {
+      display: inline-block;
+      vertical-align: middle;
+      width: 160px;
+      color: @white;
+      text-transform: uppercase;
+      padding: 10px;
+      border: 1px solid @white;
+      margin: 40px;
+      font-weight: bold;
+      background-color: transparent;
+      &:hover {
+        color: @dark-grey;
+      }
+    }
+  }
+  .quick_categories {
+    position: relative;
+    bottom: -30px;
+    li {
+      float: left;
+      width: 160px;
+    }
+    a {
+      color: @white;
+      padding-top: 20px;
+      box-sizing: border-box;
+      height: 136px;
+      display: block;
+      &:hover {
+        color: @highlight-color;
+        background-color: @white;
+        border: 1px solid @highlight-color;
+        .icon-cake01 {
+          background-position: 0px -192px;
+        }
+        .icon-cake02 {
+          background-position: -68px -192px;
+        }
+        .icon-cake03 {
+          background-position: -147px -192px;
+        }
+        .icon-cake04 {
+          background-position: -223px -192px;
+        }
+        .icon-cake05 {
+          background-position: -295px -192px;
+        }
+        .icon-cake06 {
+          background-position: -365px -192px;
+        }
+        .icon-cake07 {
+          background-position: -435px -192px;
+        }
+      }
+    }
+    ul {
+      span {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+  .info_contact {
+    text-align: left;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: -80px;
+    right: -12px;
+    background: url(../images/phone.png) no-repeat;
+    padding-left: 85px;
+    .number {
+      font-size: 40px;
+      font-weight: bold;
+      display: block;
+      .text-shadow(@black 1px 1px 0px);
+    }
+  }
+}
+.intro_section {
+  margin-top: 45px;
+  .saperator {
+    background: url(../images/icons.png) no-repeat -96px -38px;
+    width: 42px;
+    height: 42px;
+    display: block;
+    position: relative;
+    margin: 10px auto 30px auto;
+    &:before, &:after {
+      content: '';
+      display: inline-block;
+      width: 250px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      z-index: -1;
+      background-color: @black;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+  }
+  .item_inner {
+    border-color: @white;
+    color: @white;
+    padding: 0px;
+    overflow: hidden;
+    a {
+      color: @white;
+    }
+    &:hover {
+      .des_container {
+        opacity: 0.9;
+        visibility: visible;
+        .transform(scale(1) translateX(0));
+      }
+    }
+    .des_container {
+      padding: 60px 20px 20px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      z-index: 10;
+      .opacity(0);
+      visibility: hidden;
+      .transform(scale(0.9));
+      .transition(all 0.6s ease);
+      text-align: center;
+      border: 1px solid @white;
+      outline: 15px solid @highlight-color;
+      background-color: @highlight-color;
+      .price_box {
+        margin: 20px 0px;
+      }
+      .old_price {
+        color: @white;
+      }
+    }
+    .btn_cart {
+      position: relative;
+      width: 100px;
+      bottom: auto;
+      right: 50%;
+      margin-left: 130px;
+      .border-radius(50px);
+      background-color: @white;
+      color: @black;
+      &:before {
+        background-position: -256px -6px;
+        left: 20px;
+      }
+    }
+  }
+}
+.item_inner {
+  padding: 14px;
+  background-color: @white;
+  position: relative;
+  a {
+    display: block;
+  }
+  .img_container {
+    position: relative;
+    .icon-zoom {
+      position: absolute;
+      z-index: 1000;
+      top: 50%;
+      left: 50%;
+      margin: -30px;
+      .opacity(0);
+    }
+    &:hover {
+      .icon-zoom {
+        opacity: 1;
+      }
+      .overlay {
+        &:after {
+          .opacity(1);
+        }
+      }
+    }
+  }
+  .overlay {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 100;
+      .transition(all 0.3s ease-out);
+      .opacity(0);
+      background-color: rgba(37, 41, 44, 0.7);
+    }
+  }
+  .btn {
+    position: absolute;
+    right: -1px;
+    bottom: 14px;
+    padding-left: 40px;
+    .border-radius(50px 0px 0px 50px);
+    span {
+      padding-top: 10px;
+    }
+  }
+  .des_container {
+    min-height: 80px;
+    padding: 14px 0px 40px;
+    .info {
+      margin: 10px 0px;
+      color: @dark-grey;
+    }
+    .price_box {
+      font-size: 24px;
+    }
+    .old_price {
+      text-decoration: line-through;
+      font-size: 14px;
+      color: @grey;
+    }
+  }
+}
+.info_delivery {
+  margin: 20px 0;
+  padding: 20px 0;
+  text-align: center;
+  color: @white;
+  background-color: @black;
+  h4 {
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid @white;
+  }
+  [class^="delivery"] {
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 10px;
+    &:before {
+      content: '';
+      background-image: url("../images/icons.png");
+      background-repeat: no-repeat;
+      height: 32px;
+      width: 34px;
+      position: absolute;
+      left: 8px;
+    }
+  }
+  .delivery01 {
+    &:before {
+      background-position: -90px -2px;
+      top: 6px;
+    }
+  }
+  .delivery02 {
+    &:before {
+      background-position: -134px -6px;
+      top: 11px;
+    }
+  }
+  .delivery03 {
+    &:before {
+      background-position: -177px -4px;
+      top: 9px;
+    }
+  }
+}
