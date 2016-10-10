@@ -30,10 +30,12 @@ simply press <return> for a new line.
 1. Step 1
 2. Step 2
 3. Step 3
-    1. Step 3.1
-    2. Step 3.2
-> Quotes or citations
+  1. Step 3.1
+  2. Step 3.2
+> Blockquote
+>> Nested Blockquote
 `Inline code: function()`
+- - - -
 ```
 This is a code block
 var oldUnload = window.onbeforeunload;
@@ -44,4 +46,4 @@ window.onbeforeunload = function() {
     }
 };
 ```
-![Alt text](http://monosnap.com/image/bOcxxxxLGF.png)
+![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
