@@ -15,11 +15,13 @@ Markdown syntax guide
 ~~Strikethrough text~~
 **Strong text**
 ***Strong emphasized text***
+Paragraphs are separated by empty lines. Within a paragraph it's possible to have a line break,
+simply press <return> for a new line.
 [Named Link](http://www.google.fr/)
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+| Day     | Meal    | Price |
+| --------|---------|-------|
+| Monday  | pasta   | $6    |
+| Tuesday | chicken | $8    |
 * Item 1
 * Item 2
 * Item 3
