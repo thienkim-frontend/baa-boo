@@ -15,13 +15,17 @@ Markdown syntax guide
 ~~Strikethrough text~~
 **Strong text**
 ***Strong emphasized text***
+
 Paragraphs are separated by empty lines. Within a paragraph it's possible to have a line break,
 simply press <return> for a new line.
+
 [Named Link](http://www.google.fr/)
+
 | Day     | Meal    | Price |
 | --------|---------|-------|
 | Monday  | pasta   | $6    |
 | Tuesday | chicken | $8    |
+
 * Item 1
 * Item 2
 * Item 3
@@ -32,10 +36,14 @@ simply press <return> for a new line.
 3. Step 3
   1. Step 3.1
   2. Step 3.2
+
 > Blockquote
 >> Nested Blockquote
+
 `Inline code: function()`
-- - - -
+
+- - - - 
+
 ```
 This is a code block
 var oldUnload = window.onbeforeunload;
