@@ -5,8 +5,12 @@ $ npm install --save-dev gulp
 Create a gulpfile.js at the root of your project
 $ npm install --save-dev gulp-watch
 $ npm install gulp-less
+$ npm install gulp-watch
+npm install --save-dev gulp-livereload
+npm install --save-dev gulp-gh-pages
 
 Markdown syntax guide
+https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html
 # Heading 1 #
 ## Heading 2 ##
 ### Heading 3 ###

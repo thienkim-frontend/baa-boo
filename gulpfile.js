@@ -1,23 +1,24 @@
+'use strict';
 var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'),
   less = require('gulp-less'),
-  watch = require('gulp-watch'),
-  path = require('path'),
-  var watcher = gulp.watch('js/**/*.js', ['uglify','reload']);
+  livereload = require('gulp-livereload'),
+  ghPages = require('gulp-gh-pages');
 
 gulp.task('less', function () {
-  return gulp.src('./less/*.less')
-    .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
-    .pipe(gulp.dest('./public/css'));
+  return gulp.src('less/*.less')
+    .pipe(less())
+    .pipe(gulp.dest('css'))
+    .pipe(livereload());
 }); 
-gulp.src('./less/*.less')
+gulp.task('watch', function() {
+  livereload.listen();
+  gulp.watch('less/*.less', ['less']);
+});
+gulp.src('less/*.less')
   .pipe(sourcemaps.init())
   .pipe(less())
-  .pipe(sourcemaps.write('./maps'))
-  .pipe(gulp.dest('./css'));
-watcher.on('change', function(event) {
-  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-});
-gulp.task('default', ['less']);
+  .pipe(sourcemaps.write('maps'))
+  .pipe(gulp.dest('css'));
+
+gulp.task('default', ['less', 'watch']);
