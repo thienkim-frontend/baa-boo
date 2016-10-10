@@ -1,0 +1,23 @@
+{
+  "name": "baa-boo",
+  "version": "1.0.0",
+  "description": "A single web page",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thienkim2610/baa-boo.git"
+  },
+  "author": "ndt_kim@yahoo.com.vn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thienkim2610/baa-boo/issues"
+  },
+  "homepage": "https://github.com/thienkim2610/baa-boo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0"
+  }
+}
