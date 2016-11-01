@@ -18,6 +18,7 @@ Validate             https://jqueryvalidation.org/
 Jquery UI            https://jqueryui.com/
 Gmap3                http://gmap3.net/
 Wow                  http://mynameismatthieu.com/WOW/
+```
 
 ### What's included
 
