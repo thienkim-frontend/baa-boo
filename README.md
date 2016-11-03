@@ -2,7 +2,6 @@
 
 ```
 Home page            https://thienkim-frontend.github.io/baa-boo/
-
 ```
 
 ### Overview
