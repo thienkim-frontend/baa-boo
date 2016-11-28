@@ -5,30 +5,26 @@ var gulp = require('gulp'),
   less = require('gulp-less'),
   livereload = require('gulp-livereload'),
   ghPages = require('gulp-gh-pages');
+var lessImport = require('gulp-less-import');
 var concat = require('gulp-concat');  
 var rename = require('gulp-rename');  
 var uglify = require('gulp-uglify');
 var uglifycss = require('gulp-uglifycss');
-var jsFiles = 'js/lib/*.js',  
-    jsDest = 'js',
-    cssFiles = 'css/plugin/*.css',  
-    cssDest = 'css';
+var jsFiles = 'source/js/lib/*.js',  
+    jsDest = 'public/js',
+    cssFiles = 'source/css/plugin/*.css',  
+    cssDest = 'public/css';
+var path = require('path');
 gulp.task('less', function () {
-  return gulp.src('less/style.less')
-    .pipe(watchLess('less/style.less'))
-    .pipe(less())
-    .pipe(gulp.dest('css'))
-    .pipe(livereload());
+  return gulp.src('source/less/**/*.less')
+  .pipe(less())
+  .pipe(gulp.dest('public/css'));
 }); 
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch('less/*.less', ['less']);
+  gulp.watch('source/less/**/*.less', ['less']);
 });
-gulp.src('less/*.less')
-  .pipe(sourcemaps.init())
-  .pipe(less())
-  .pipe(sourcemaps.write('maps'))
-  .pipe(gulp.dest('css'));
+
 gulp.task('deploy', function() {
   return gulp.src('**/*')
     .pipe(ghPages());
@@ -49,4 +45,9 @@ gulp.task('uglifycss', function() {
       .pipe(uglifycss())
       .pipe(gulp.dest(cssDest));
 });
+gulp.task('deploy', function() {
+  return gulp.src('public/**/*')
+    .pipe(ghPages());
+});
+// gulp.task('default', ['less', 'deploy']);
 gulp.task('default', ['less']);
